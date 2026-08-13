@@ -15,6 +15,8 @@ PasswordStrengthChecker est une gem Ruby permettant d'analyser la robustesse d'u
 La structure initiale de la gem a été créée avec Bundler.
 - Le développement des règles de sécurité a commencé avec une approche TDD.
 - La première règle concerne une longueur minimale de 8 caractères.
+- La règle de longueur minimale est implémentée.
+- Un mot de passe respecte cette règle lorsqu'il contient au moins 8 caractères.
 
 ### Objectif de la version 0.1.0
 
@@ -75,6 +77,8 @@ PasswordStrengthChecker is a Ruby gem for analyzing password strength and provid
 The initial gem structure has been generated with Bundler.
 - Security-rule development has started using TDD.
 - The first rule checks for a minimum length of 8 characters.
+- The minimum-length rule is implemented.
+- A password satisfies this rule when it contains at least 8 characters.
 
 ### Version 0.1.0 goals
 
