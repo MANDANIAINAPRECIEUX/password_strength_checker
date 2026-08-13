@@ -1,43 +1,123 @@
 # PasswordStrengthChecker
 
-TODO: Delete this and the text below, and describe your gem
+[🇫🇷 Français](#français) | [🇬🇧 English](#english)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/password_strength_checker`. To experiment with that code, run `bin/console` for an interactive prompt.
+---
 
-## Installation
+# Français
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+PasswordStrengthChecker est une gem Ruby permettant d'analyser la robustesse d'un mot de passe et de proposer des recommandations pour améliorer sa sécurité.
 
-Install the gem and add to the application's Gemfile by executing:
+## État du projet
+
+🚧 Projet en cours de développement.
+
+La structure initiale de la gem a été créée avec Bundler.
+
+### Objectif de la version 0.1.0
+
+La première version permettra de :
+
+- vérifier la longueur d'un mot de passe ;
+- détecter les lettres minuscules ;
+- détecter les lettres majuscules ;
+- détecter les chiffres ;
+- détecter les caractères spéciaux ;
+- calculer un score de robustesse ;
+- déterminer un niveau de sécurité ;
+- vérifier si le mot de passe respecte les règles minimales ;
+- proposer des recommandations d'amélioration.
+
+## Installation pour le développement
+
+Installez les dépendances :
 
 ```bash
-bundle add UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle install
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+## Tests
 
 ```bash
-gem install UPDATE_WITH_YOUR_GEM_NAME_IMMEDIATELY_AFTER_RELEASE_TO_RUBYGEMS_ORG
+bundle exec rspec
 ```
 
-## Usage
+## Qualité du code
 
-TODO: Write usage instructions here
+```bash
+bundle exec rubocop
+```
+
+## Développement
+
+Le projet est développé progressivement avec une approche TDD :
+
+```text
+Test
+→ Échec
+→ Implémentation
+→ Test réussi
+→ Refactoring
+```
+
+---
+
+# English
+
+PasswordStrengthChecker is a Ruby gem for analyzing password strength and providing recommendations to improve password security.
+
+## Project status
+
+🚧 Project under development.
+
+The initial gem structure has been generated with Bundler.
+
+### Version 0.1.0 goals
+
+The first version will provide:
+
+- password length validation;
+- lowercase letter detection;
+- uppercase letter detection;
+- digit detection;
+- special-character detection;
+- password-strength scoring;
+- security-level classification;
+- minimum-security validation;
+- improvement recommendations.
+
+## Development installation
+
+Install dependencies:
+
+```bash
+bundle install
+```
+
+## Tests
+
+```bash
+bundle exec rspec
+```
+
+## Code quality
+
+```bash
+bundle exec rubocop
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+The project is developed incrementally using TDD:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/password_strength_checker. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/password_strength_checker/blob/master/CODE_OF_CONDUCT.md).
+```text
+Test
+→ Failure
+→ Implementation
+→ Passing test
+→ Refactoring
+```
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the PasswordStrengthChecker project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/password_strength_checker/blob/master/CODE_OF_CONDUCT.md).
+This project is available under the MIT License.
